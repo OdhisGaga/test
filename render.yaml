@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: buy-trade-site
+    env: node
+    buildCommand: npm install
+    startCommand: node backend/server.js
+    envVars:
+      - key: MONGO_URI
+        value: your-mongo-uri
